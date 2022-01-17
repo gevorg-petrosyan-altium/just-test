@@ -19,7 +19,7 @@ function readTextFile(file, callback) {
 }
 
 function OnLoad() {
-    readTextFile("../json/test.json", function (text) {
+    readTextFile("json/test.json", function (text) {
         data = JSON.parse(text);
         document.getElementById("start_text").innerHTML = data.StartText;
     });
